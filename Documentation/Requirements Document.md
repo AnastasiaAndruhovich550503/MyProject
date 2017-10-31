@@ -17,11 +17,11 @@
 		3.	Для работы с данными использована таблица баз данных SQL. Она позволяет напрямую обращаться к информации, проста и удобна в использовании. При необходимости легко переносится в другую СУБД.
 	2.	Интерфейс пользователя
 		1.	 Модель графического интерфейса проекта расположена в папке “Интерфейс пользователя”. 
-		![Стартовое окно](https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/Интерфейс%20пользователя/StartForm.jpg)
-		![Окно с разделами продуктов](https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/Интерфейс%20пользователя/SectionForm.jpg)
-		![Окно со списком продуктов в разделе](https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/Интерфейс%20пользователя/ProductForm.jpg)
-		![Окно с иерархией хранилища](https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/Интерфейс%20пользователя/StorageForm.jpg)
-		![Окно поиска продукта](https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/Интерфейс%20пользователя/SearchForm.jpg)
+		![Стартовое окно](https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/UserInterface/StartForm.jpg)
+		![Окно с разделами продуктов](https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/UserInterface/SectionForm.jpg)
+		![Окно со списком продуктов в разделе](https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/UserInterface/ProductForm.jpg)
+		![Окно с иерархией хранилища](https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/UserInterface/StorageForm.jpg)
+		![Окно поиска продукта]https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/UserInterface/SearchForm.jpg)
 	3.	Характеристики пользователей
 		1.	Пользователь – это человек от сорока лет, в основном принадлежащий к старшей возрастной категории. Как известно, на заготовку консервированных продуктов уходит много времени и сил. Такого рода деятельностью в основном занимаются уже пожилые люди. Таким образом больше 50% пользователей могут не иметь высшего образования и навыков общения с компьютером. 
 	4.	Операционная среда
