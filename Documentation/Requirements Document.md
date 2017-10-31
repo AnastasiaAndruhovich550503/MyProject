@@ -21,7 +21,7 @@
 		![Окно с разделами продуктов](https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/UserInterface/SectionForm.jpg)
 		![Окно со списком продуктов в разделе](https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/UserInterface/ProductForm.jpg)
 		![Окно с иерархией хранилища](https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/UserInterface/StorageForm.jpg)
-		![Окно поиска продукта]https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/UserInterface/SearchForm.jpg)
+		![Окно поиска продукта](https://github.com/AnastasiaAndruhovich550503/MyProject/blob/master/Documentation/UserInterface/SearchForm.jpg)
 	3.	Характеристики пользователей
 		1.	Пользователь – это человек от сорока лет, в основном принадлежащий к старшей возрастной категории. Как известно, на заготовку консервированных продуктов уходит много времени и сил. Такого рода деятельностью в основном занимаются уже пожилые люди. Таким образом больше 50% пользователей могут не иметь высшего образования и навыков общения с компьютером. 
 	4.	Операционная среда
