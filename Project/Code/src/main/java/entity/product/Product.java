@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Product {
     private String name;
-    private ArrayList<Characteristic> characteristicList;
+    private ArrayList<Characteristic> characteristics;
 
     public Product(String name) {
         this.name = name;
-        characteristicList = new ArrayList<Characteristic>();
+        characteristics = new ArrayList<Characteristic>();
     }
 
     public String getName() {
@@ -20,17 +20,17 @@ public class Product {
     }
 
     public Characteristic getCharacteristic(int index) {
-        return characteristicList.get(index);
+        return characteristics.get(index);
     }
 
     public void addCharacteristic(Characteristic characteristic) {
-        int characteristicPosition = characteristicList.indexOf(characteristic);
+        int characteristicPosition = characteristics.indexOf(characteristic);
         if (characteristicPosition == -1) {
-            characteristicList.add(characteristic);
+            characteristics.add(characteristic);
         }
         else {
-            int newQuantity = characteristicList.get(characteristicPosition).getQuantity() + characteristic.getQuantity();
-            characteristicList.get(characteristicPosition).setQuantity(newQuantity);
+            int newQuantity = characteristics.get(characteristicPosition).getQuantity() + characteristic.getQuantity();
+            characteristics.get(characteristicPosition).setQuantity(newQuantity);
         }
     }
 }

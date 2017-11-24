@@ -7,11 +7,11 @@ import java.util.ArrayList;
 
 public class ProductComponent implements Component {
     private ComponentType componentType;
-    private ArrayList<Product> productList;
+    private ArrayList<Product> products;
 
     public ProductComponent(ComponentType componentType) {
         this.componentType = componentType;
-        productList = new ArrayList<Product>();
+        products = new ArrayList<Product>();
     }
 
     public ComponentType getComponentType() {
@@ -19,15 +19,15 @@ public class ProductComponent implements Component {
     }
 
     public void addProduct(Product product) {
-        productList.add(product);
+        products.add(product);
     }
 
     public Product getProduct(int index) {
-        return productList.get(index);
+        return products.get(index);
     }
 
     public void remove(Product product) {
-        productList.remove(product);
+        products.remove(product);
     }
 
     public int countItem() {
