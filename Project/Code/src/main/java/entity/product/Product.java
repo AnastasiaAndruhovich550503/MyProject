@@ -3,12 +3,22 @@ package entity.product;
 import java.util.ArrayList;
 
 public class Product {
+    private int id;
     private String name;
     private ArrayList<Characteristic> characteristics;
 
-    public Product(String name) {
+    public Product(int id, String name) {
+        this.id = id;
         this.name = name;
         characteristics = new ArrayList<Characteristic>();
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

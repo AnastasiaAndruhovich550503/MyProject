@@ -1,28 +1,37 @@
 package entity.product;
 
 public class Characteristic {
+    private int id;
     private int year;
     private int volume;
-    private String measure;
-    private int quantity;
-    private String address;
+    private int storageId;
     private String description;
 
-    public Characteristic(int year, int volume, String measure, int quantity, String address) {
+    public Characteristic(int id, int year, int volume, String measure, int quantity, int storageId) {
+        this.id = id;
         this.year = year;
         this.volume = volume;
         this.measure = measure;
         this.quantity = quantity;
-        this.address = address;
+        this.storageId = storageId;
     }
 
-    public Characteristic(int year, int volume, String measure, int quantity, String address, String description) {
+    public Characteristic(int id, int year, int volume, String measure, int quantity, int storageId, String description) {
+        this.id = id;
         this.year = year;
         this.volume = volume;
         this.measure = measure;
         this.quantity = quantity;
-        this.address = address;
+        this.storageId = storageId;
         this.description = description;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getYear() {
@@ -57,12 +66,12 @@ public class Characteristic {
         this.quantity = quantity;
     }
 
-    public String getAddress() {
-        return address;
+    public int getStorageId() {
+        return storageId;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setStorageId(int storageId) {
+        this.storageId = storageId;
     }
 
     public String getDescription() {
@@ -80,21 +89,23 @@ public class Characteristic {
 
         Characteristic that = (Characteristic) o;
 
+        if (getId() != that.getId()) return false;
         if (getYear() != that.getYear()) return false;
         if (getVolume() != that.getVolume()) return false;
         if (getQuantity() != that.getQuantity()) return false;
+        if (getStorageId() != that.getStorageId()) return false;
         if (!getMeasure().equals(that.getMeasure())) return false;
-        if (!getAddress().equals(that.getAddress())) return false;
         return getDescription().equals(that.getDescription());
     }
 
     @Override
     public int hashCode() {
-        int result = getYear();
+        int result = getId();
+        result = 31 * result + getYear();
         result = 31 * result + getVolume();
         result = 31 * result + getMeasure().hashCode();
         result = 31 * result + getQuantity();
-        result = 31 * result + getAddress().hashCode();
+        result = 31 * result + getStorageId();
         result = 31 * result + getDescription().hashCode();
         return result;
     }
@@ -102,11 +113,12 @@ public class Characteristic {
     @Override
     public String toString() {
         return "Characteristic{" +
-                "year=" + year +
+                "id=" + id +
+                ", year=" + year +
                 ", volume=" + volume +
                 ", measure='" + measure + '\'' +
                 ", quantity=" + quantity +
-                ", address='" + address + '\'' +
+                ", storageId=" + storageId +
                 ", description='" + description + '\'' +
                 '}';
     }
