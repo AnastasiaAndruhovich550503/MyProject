@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="CheerfulGarden.entity.Volume" table="volume" catalog="cheerful_garden">
+        <id name="volumeId" type="java.lang.Integer">
+            <column name="volume_id" />
+            <generator class="identity" />
+        </id>
+        <property name="volume" type="java.lang.Integer">
+            <column name="volume" not-null="true" />
+        </property>
+        <property name="measure" type="java.lang.String">
+            <column name="measure" />
+        </property>
+    </class>
+</hibernate-mapping>
