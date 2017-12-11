@@ -18,6 +18,20 @@ public class StartWindowController {
 
     public void chooseProduct() {
         try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/ProductWindow.fxml"));
+            Parent root = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root, 350, 450));
+            stage.setTitle("Веселый огород");
+            stage.show();
+
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void chooseStorage() {
+        try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/application.fxml"));
             Parent root = fxmlLoader.load();
             Stage stage = new Stage();

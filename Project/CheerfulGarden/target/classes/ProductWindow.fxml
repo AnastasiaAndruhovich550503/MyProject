@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="662.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="cheerfulgarden.controller.ProductWindowController">
+    <children>
+      <ScrollPane prefHeight="574.0" prefWidth="662.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                    <TableView fx:id="tableView" prefHeight="549.0" prefWidth="634.0">
+                        <columns>
+                            <TableColumn fx:id="name" prefWidth="110.0" text="Название" />
+                            <TableColumn fx:id="year" prefWidth="74.0" text="Год" />
+                            <TableColumn fx:id="volume" prefWidth="91.0" text="Объем" />
+                        <TableColumn prefWidth="112.0" text="Количество" />
+                        <TableColumn prefWidth="127.0" text="Хранилище" />
+                        </columns>
+                    </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+    </children>
+</AnchorPane>
