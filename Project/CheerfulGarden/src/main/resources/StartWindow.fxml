@@ -5,8 +5,8 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cheerfulgarden.controller.StartWindowController">
    <children>
-      <Button id="productButton" layoutX="249.0" layoutY="85.0" mnemonicParsing="false" onAction="#chooseProduct" prefHeight="47.0" prefWidth="102.0" text="Продукты" />
-      <Button id="storageButton" layoutX="249.0" layoutY="177.0" mnemonicParsing="false" onAction="#chooseProduct" prefHeight="47.0" prefWidth="102.0" text="Иерархия хранилища" />
-      <Button id="exitButton" layoutX="249.0" layoutY="270.0" mnemonicParsing="false" onAction="#chooseExit" prefHeight="47.0" prefWidth="102.0" text="Выход" />
+      <Button fx:id="productButton" layoutX="249.0" layoutY="85.0" mnemonicParsing="false" onAction="#chooseProduct" prefHeight="47.0" prefWidth="102.0" text="Продукты" />
+      <Button fx:id="storageButton" layoutX="249.0" layoutY="177.0" mnemonicParsing="false" onAction="#chooseStorage" prefHeight="47.0" prefWidth="102.0" text="Иерархия хранилища" />
+      <Button fx:id="exitButton" layoutX="249.0" layoutY="270.0" mnemonicParsing="false" onAction="#chooseExit" prefHeight="47.0" prefWidth="102.0" text="Выход" />
    </children>
 </AnchorPane>

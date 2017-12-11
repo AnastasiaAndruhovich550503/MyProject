@@ -5,15 +5,16 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="738.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="cheerfulgarden.controller.ProductWindowController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="649.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cheerfulgarden.controller.ProductWindowController">
     <children>
-        <TableView fx:id="tableView" layoutX="57.0" layoutY="77.0" prefHeight="549.0" prefWidth="634.0">
+        <TableView fx:id="productList" layoutX="57.0" layoutY="77.0" prefHeight="549.0" prefWidth="634.0">
             <columns>
-                <TableColumn fx:id="name" prefWidth="199.0" text="Название" />
-                <TableColumn fx:id="year" prefWidth="82.0" text="Год" />
-                <TableColumn fx:id="volume" prefWidth="81.0" text="Объем" />
-            <TableColumn prefWidth="88.0" text="Количество" />
-            <TableColumn prefWidth="183.0" text="Хранилище" />
+                <TableColumn fx:id="columnName" prefWidth="128.0" text="Название" />
+                <TableColumn fx:id="columnYear" prefWidth="68.0" text="Год" />
+                <TableColumn fx:id="columnVolume" prefWidth="77.0" text="Объем" />
+                <TableColumn fx:id="columnQuantity" prefWidth="84.0" text="Количество" />
+                <TableColumn fx:id="columnStorage" prefWidth="107.0" text="Хранилище" />
+                <TableColumn fx:id="columnDescription" prefWidth="169.0" text="Описание" />
             </columns>
         </TableView>
       <Button id="backButton" layoutX="77.0" layoutY="21.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="93.0" text="Назад" />
