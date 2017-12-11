@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="CheerfulGarden.entity.ProductInformation" table="product_information" catalog="cheerful_garden">
+        <id name="productInfoId" type="java.lang.Integer">
+            <column name="product_info_id" />
+            <generator class="identity" />
+        </id>
+        <property name="year" type="java.lang.Integer">
+            <column name="year" not-null="true" />
+        </property>
+        <property name="quantity" type="java.lang.Integer">
+            <column name="quantity" not-null="true" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="description" />
+        </property>
+    </class>
+</hibernate-mapping>
