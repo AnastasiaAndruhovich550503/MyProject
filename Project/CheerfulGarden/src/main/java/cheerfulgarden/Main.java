@@ -1,4 +1,4 @@
-package CheerfulGarden;
+package cheerfulgarden;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,9 +10,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("../application.fxml"));
-        primaryStage.setTitle("Cheerful Garden");
-        primaryStage.setScene(new Scene(root, 350, 410));
+        Parent root = FXMLLoader.load(getClass().getResource("../StartWindow.fxml"));
+        primaryStage.setTitle("Веселый огород");
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
 

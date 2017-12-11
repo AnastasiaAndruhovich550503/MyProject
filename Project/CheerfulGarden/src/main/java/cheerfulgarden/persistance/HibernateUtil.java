@@ -1,4 +1,4 @@
-package CheerfulGarden.persistance;
+package cheerfulgarden.persistance;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -20,7 +20,7 @@ public class HibernateUtil {
             return configuration.buildSessionFactory(serviceRegistry);
         }
         catch (Throwable ex) {
-            System.err.println("Initial SessionFactory creation failed." + ex);
+            System.err.println("Initial SessionCreator creation failed." + ex);
             throw new ExceptionInInitializerError(ex);
         }
     }

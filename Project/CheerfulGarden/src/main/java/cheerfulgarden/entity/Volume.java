@@ -1,4 +1,4 @@
-package CheerfulGarden.entity;
+package cheerfulgarden.entity;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package CheerfulGarden.entity;
+package cheerfulgarden.entity;
 
 public class ProductInformation {
     private int productInfoId;

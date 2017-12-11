@@ -1,30 +1,30 @@
-package CheerfulGarden.entity;
+package cheerfulgarden.entity;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class Product {
-    private int productId;
+public class Storage {
+    private int storageId;
     private String name;
-    private String sectionName;
+    private int parentId;
     private Set product_information = new HashSet();
 
-    public Product() {
+    public Storage() {
 
     }
 
-    public Product(String name, String sectionName, Set product_information) {
+    public Storage(String name, int parentId, Set product_information) {
         this.name = name;
-        this.sectionName = sectionName;
+        this.parentId = parentId;
         this.product_information = product_information;
     }
 
-    public int getProductId() {
-        return productId;
+    public int getStorageId() {
+        return storageId;
     }
 
-    public void setProductId(int productId) {
-        this.productId = productId;
+    public void setStorageId(int storageId) {
+        this.storageId = storageId;
     }
 
     public String getName() {
@@ -35,12 +35,12 @@ public class Product {
         this.name = name;
     }
 
-    public String getSectionName() {
-        return sectionName;
+    public int getParentId() {
+        return parentId;
     }
 
-    public void setSectionName(String sectionName) {
-        this.sectionName = sectionName;
+    public void setParentId(int parentId) {
+        this.parentId = parentId;
     }
 
     public Set getProduct_information() {

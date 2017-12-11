@@ -3,7 +3,7 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping>
-    <class name="CheerfulGarden.entity.Storage" table="storage" catalog="cheerful_garden">
+    <class name="cheerfulgarden.entity.Storage" table="storage" catalog="cheerful_garden">
         <id name="storageId" type="java.lang.Integer">
             <column name="storage_id" />
             <generator class="identity" />
@@ -12,7 +12,11 @@
             <column name="name" length="45" not-null="true" />
         </property>
         <property name="parentId" type="java.lang.Integer">
-            <column name="parent_id" />
+            <column name="parent_id" not-null="true"/>
         </property>
+        <set name="product_information" lazy="false">
+            <key column="storage_id"/>
+            <one-to-many class="cheerfulgarden.entity.ProductInformation"/>
+        </set>
     </class>
 </hibernate-mapping>

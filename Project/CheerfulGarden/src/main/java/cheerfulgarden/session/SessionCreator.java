@@ -1,6 +1,6 @@
-package CheerfulGarden.session;
+package cheerfulgarden.session;
 
-import CheerfulGarden.persistance.HibernateUtil;
+import cheerfulgarden.persistance.HibernateUtil;
 import org.hibernate.*;
 import org.hibernate.jdbc.ReturningWork;
 import org.hibernate.jdbc.Work;
