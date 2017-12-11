@@ -1,25 +1,22 @@
 package CheerfulGarden.entity;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Volume {
     private int volumeId;
     private int volume;
-    private String measure;
+    private int degreeTen;
+    private Set product_information = new HashSet();
 
     public Volume() {
 
     }
 
-    public Volume(int volume, String measure) {
+    public Volume(int volume, int degreeTen, Set product_information) {
         this.volume = volume;
-        this.measure = measure;
-    }
-
-    public int getVolume() {
-        return volume;
-    }
-
-    public void setVolume(int volume) {
-        this.volume = volume;
+        this.degreeTen = degreeTen;
+        this.product_information = product_information;
     }
 
     public int getVolumeId() {
@@ -30,11 +27,27 @@ public class Volume {
         this.volumeId = volumeId;
     }
 
-    public String getMeasure() {
-        return measure;
+    public int getVolume() {
+        return volume;
     }
 
-    public void setMeasure(String measure) {
-        this.measure = measure;
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+
+    public int getDegreeTen() {
+        return degreeTen;
+    }
+
+    public void setDegreeTen(int degreeTen) {
+        this.degreeTen = degreeTen;
+    }
+
+    public Set getProduct_information() {
+        return product_information;
+    }
+
+    public void setProduct_information(Set product_information) {
+        this.product_information = product_information;
     }
 }
